@@ -28,7 +28,7 @@
       "sha256": "343acfdadad5e1891e7a607bdc2d81e68b79691665971162bfd609263df2ad16",
       "author": "Umash",
       "notes": "Research data, scientific papers and lecture videos shared by their authors: ImageNet, Wikipedia dumps, genomes, open-access journals. Reads the site's daily database file, as it asks scrapers to, about 3,000 torrents, best title matches first, with size but no dates or seed counts. Books searches the papers; All adds datasets and university courses.",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -227,7 +227,7 @@
       "sha256": "08fbf5212d7e92d1c5100d1d15263b4a71baabc3d37c76c34250465024629880",
       "author": "Umash",
       "notes": "DHT search through BT4G's open RSS feed, which works where its web pages show a Cloudflare check. One quick request, with magnets; up to 15 results and no seed counts.",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -339,7 +339,7 @@
       "sha256": "d82dd8925383791820ecf355d17aa6fa9c1471372e3afb2d153c694a0e2cecd7",
       "author": "Umash",
       "notes": "TV shows through EZTV's own API, which works where the site's Cloudflare check blocks plugins, with no login. Search by show name (\"Severance S02E03\" works); words that aren't a show, such as a year or a release group like MeGusta, are looked for in the newest 500 uploads. The API is asked at eztvx.to and then the site's other addresses, and a Cloudflare check or rate limit is reported as such. Search by show name, optionally with S02E03, S02 or 2x03. Show names are looked up on IMDb.",
-      "list": "official",
+      "list": "public",
       "flags": [],
       "platforms": [
         "all"
@@ -435,7 +435,7 @@
       "sha256": "e975422f922cca8d79c099d7a1ab763be85bbc2ae8e4e9c305ad68cb32c4325a",
       "author": "Umash",
       "notes": "Films, TV, music, books, software, games and pictures that are free to share: public-domain works, open-source software, live concerts. Every item has an official torrent served by archive.org itself, so downloads work without peers. 100 results a search, most-downloaded first, with size and date; load more for the next 100. In every category. No seed counts.",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -531,7 +531,7 @@
       "sha256": "b437d98369a36edf002a2ccf6777c5d26cfca7e9af61c8dd826c6633e0b264de",
       "author": "Umash",
       "notes": "Linux and BSD images. Reads the site's rebuilt pages, with seeds and dates.",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -646,7 +646,7 @@
       "sha256": "6bbf81ab981bb1aacd87000c1b53d9bddbacd6125495022a9363cf87d020c388",
       "author": "Umash",
       "notes": "Russian forum tracker, now at nnmclub.to. No account needed: up to 50 best-seeded results a search, with magnets. Many names are in Russian, and searching in Russian works too.",
-      "list": "private",
+      "list": "public",
       "flags": [],
       "platforms": [
         "all"
@@ -776,7 +776,7 @@
       "sha256": "29a08a5ff1675366def12d9d76b35229dc5b6c8f84c321096f76f490c8d79535",
       "author": "Umash",
       "notes": "Community torrents of open AI models, such as LLMs, mirrored from Hugging Face, searched under All. Uses the plain-text search the site documents for terminal use (pirateface.co/s/<words>), one request a search and no account. Every result is a magnet with the site's trackers and Hugging Face web seeds, best-seeded first. The site's list has no leechers or further pages, and sizes are its rounded figures. Published is the date the site \"Witnessed\" the model, read from each model's page a few at a time and saved on this Mac for two weeks: a first search can take about 10 seconds and show some results without a date, and the next search fills the rest in. Models whose license makes the downloader accept terms first have no magnet in that list, so they don't show here. The site isn't affiliated with Hugging Face: check each file's SHA-256 against the hash on the model page. Tested against the live site.",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -956,7 +956,7 @@
       "sha256": "7cb7425db3b5337259499f7bee16109a7584b6e459e96ac4e636e49f68b4e142",
       "author": "Umash",
       "notes": "This season's anime with English subtitles, released within an hour of airing. Each episode is a result in 480p, 720p and 1080p, up to 270 through the site's own API, with magnets, size and date; load more for older episodes. Anime only, so All and Anime are the same search. No seed counts.",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -1246,7 +1246,7 @@
       "sha256": "36fc443606b75b3bec4bd16653bf9dcb368af22a1eb5bda2a5ca728f3550b2f5",
       "author": "Umash",
       "notes": "Bulgarian magnet search that replaced Zamunda.RIP. No account needed: 20 results a page, with Load More, and magnets. No seed counts or dates.",
-      "list": "private",
+      "list": "public",
       "flags": [],
       "platforms": [
         "all"

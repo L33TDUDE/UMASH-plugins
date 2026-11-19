@@ -18,7 +18,7 @@
       "name": "Academic Torrents",
       "site": "https://academictorrents.com/",
       "author": "Umash",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -181,7 +181,7 @@
       "name": "BT4G",
       "site": "https://bt4gprx.com/",
       "author": "Umash",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -265,7 +265,7 @@
       "name": "EZTV",
       "site": "https://eztvx.to/",
       "author": "Umash",
-      "list": "official",
+      "list": "public",
       "flags": [],
       "platforms": [
         "all"
@@ -337,7 +337,7 @@
       "name": "Internet Archive",
       "site": "https://archive.org/",
       "author": "Umash",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -409,7 +409,7 @@
       "name": "Linux Tracker",
       "site": "https://linuxtracker.org/",
       "author": "Umash",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -496,7 +496,7 @@
       "name": "NNM-Club",
       "site": "https://nnmclub.to/",
       "author": "Umash",
-      "list": "private",
+      "list": "public",
       "flags": [],
       "platforms": [
         "all"
@@ -594,7 +594,7 @@
       "name": "Pirate Face",
       "site": "https://pirateface.co/",
       "author": "Umash",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -730,7 +730,7 @@
       "name": "SubsPlease",
       "site": "https://subsplease.org/",
       "author": "Umash",
-      "list": "public",
+      "list": "official",
       "flags": [],
       "platforms": [
         "all"
@@ -948,7 +948,7 @@
       "name": "Zamunda.LIFE",
       "site": "https://zamunda.life/",
       "author": "Umash",
-      "list": "private",
+      "list": "public",
       "flags": [],
       "platforms": [
         "all"
