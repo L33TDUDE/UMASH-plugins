@@ -1,4 +1,4 @@
-# VERSION: 1.0
+# VERSION: 1.1
 # AUTHORS: Umash
 #
 # LimeTorrents (limetorrents.fun): a long-running general torrent index with
@@ -26,6 +26,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 import helpers
 from helpers import _headers
@@ -125,18 +126,28 @@ class umash_limetorrents(object):
         query = urllib.parse.quote(" ".join(urllib.parse.unquote(what).split()), safe="")
         wanted = self.supported_categories.get(cat, "")
         first = self.setting("UMASH_START_PAGE", 1)
-        for number in range(first, first + self.setting("UMASH_MAX_PAGES", 4 if wanted else 2)):
+        numbers = list(range(first, first + self.setting("UMASH_MAX_PAGES", 4 if wanted else 2)))
+
+        # The site takes 10 to 13 seconds a page, so the pages are asked for together
+        # (about 14 s for 4 instead of about 50 s one after another).
+        def get(number):
             try:
-                text = self.fetch(f"/search/all/{query}/seeds/{number}/")
-            except RuntimeError:
-                if number > first:
-                    return  # Keep what the earlier pages found. Load More picks up from here.
-                raise
-            has_more = self.read(text, wanted) >= self.per_page  # counts every row on the page, shown or not
-            self.more(number + 1 if has_more else 0)
-            if not has_more:
-                return
-            time.sleep(0.5)
+                return self.fetch(f"/search/all/{query}/seeds/{number}/")
+            except RuntimeError as error:
+                return error
+
+        with ThreadPoolExecutor(max_workers=len(numbers)) as pool:
+            futures = [pool.submit(get, number) for number in numbers]
+            for number, future in zip(numbers, futures):
+                text = future.result()
+                if isinstance(text, RuntimeError):
+                    if number > first:
+                        return  # Keep what the earlier pages found. Load More picks up from here.
+                    raise text
+                has_more = self.read(text, wanted) >= self.per_page  # counts every row on the page, shown or not
+                self.more(number + 1 if has_more else 0)
+                if not has_more:
+                    return
 
     def download_torrent(self, link):
         if not re.fullmatch(r"magnet:\?xt=urn:btih:[0-9a-f]{40}(&[^\s\x00-\x1f\x7f-\x9f]*)?", link):
