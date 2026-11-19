@@ -6,10 +6,20 @@ Search plugins for Umash. Each plugin is one Python file that searches one site 
 
 ```
 plugins/                One file per plugin, named umash_<site>.py. The file name is the plugin's ID.
-catalog/plugins.json    The list Umash reads: every plugin with its version, a sha256 of its file, and notes.
+catalog/metadata.json   Hand-edited: each plugin's name, site, notes, list, flags and platforms.
+catalog/plugins.json    The list Umash reads. Generated: don't edit it by hand.
+tools/build-catalog.py  Builds plugins.json from the two above.
 ```
 
-`catalog/plugins.json` is generated from the app by `tools/publish-plugins.sh`. Don't edit it by hand: the hashes would stop matching and Umash would refuse the files.
+Umash carries no plugins of its own. On first launch a person chooses Official, Public or Private (each includes the ones before it) and Umash downloads those plugins from here, checking every file against the sha256 in `plugins.json`.
+
+After you add or change a plugin, or edit `metadata.json`, run:
+
+```
+python3 -I tools/build-catalog.py
+```
+
+and commit the result. The generator stops if a plugin has no metadata (or the reverse), has no `# VERSION:` line, or has a bad field. Don't edit `plugins.json` by hand: the hashes would stop matching and Umash would refuse the files. A `"hidden"` note in `metadata.json` keeps a plugin in this repository but out of the list.
 
 ## The list (format 1)
 
@@ -26,7 +36,7 @@ Each plugin entry has:
 | `file` | Always `plugins/<id>.py`. |
 | `version` | From the plugin's `# VERSION:` line. Umash offers an update only when this is higher than the installed version. |
 | `sha256` | Hash of the file. Umash compares every download against it before showing the plugin for review. |
-| `list` | `official`, `public` or `private`: where Umash lists the plugin. |
+| `list` | `official`, `public` or `private`. A person who chooses Public gets official and public; Private gets all three. |
 | `flags` | `needsLogin`, `needsKey`, `adult`, `readNotes`. |
 | `platforms` | `all`, or any of `macos`, `linux`, `win11`. Plugins are plain Python, so everything is `all` today. |
 

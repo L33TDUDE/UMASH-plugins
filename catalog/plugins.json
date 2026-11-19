@@ -84,21 +84,6 @@
       ]
     },
     {
-      "id": "umash_apachetorrent",
-      "name": "Apache Torrents",
-      "site": "https://apachetorrents.com/",
-      "file": "plugins/umash_apachetorrent.py",
-      "version": "1.0",
-      "sha256": "8e4f91b076897ca173b3aa9910f97bd725fc13f1a837c18225c025200129f994",
-      "author": "Umash",
-      "notes": "Brazilian movies and series, one result per quality. Follows the site's move and new layout. No seed counts.",
-      "list": "public",
-      "flags": [],
-      "platforms": [
-        "all"
-      ]
-    },
-    {
       "id": "umash_avistaz",
       "name": "AvistaZ",
       "site": "https://avistaz.to/",
