@@ -1,0 +1,1271 @@
+{
+  "format": 1,
+  "updated": "2026-11-19",
+  "plugins": [
+    {
+      "id": "umash_1337x",
+      "name": "1337x",
+      "site": "https://1337x.to/",
+      "file": "plugins/umash_1337x.py",
+      "version": "1.0",
+      "sha256": "1b2ca08d03737ec7c317f24524536987bd4ac782b8ca3679ba12d7b17e845d19",
+      "author": "Umash",
+      "notes": "Large general torrent site, best-seeded first, up to 100 results with seeds, sizes and dates, and anime, games, movies, music, software, TV and book categories. The site shows a Cloudflare check: open the plugin's sign-in once and Umash keeps the pass (there is no account). The magnet is fetched when you download. Built from Jackett's and Prowlarr's indexers and tested against mock pages; the live site has not been read yet.",
+      "list": "public",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_academictorrents",
+      "name": "Academic Torrents",
+      "site": "https://academictorrents.com/",
+      "file": "plugins/umash_academictorrents.py",
+      "version": "1.0",
+      "sha256": "343acfdadad5e1891e7a607bdc2d81e68b79691665971162bfd609263df2ad16",
+      "author": "Umash",
+      "notes": "Research data, scientific papers and lecture videos shared by their authors: ImageNet, Wikipedia dumps, genomes, open-access journals. Reads the site's daily database file, as it asks scrapers to, about 3,000 torrents, best title matches first, with size but no dates or seed counts. Books searches the papers; All adds datasets and university courses.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_acgrip",
+      "name": "ACG.RIP",
+      "site": "https://acg.rip/",
+      "file": "plugins/umash_acgrip.py",
+      "version": "1.0",
+      "sha256": "78989689a644f2e340babb3e68f3e3ad8fa8544e54be37757a20cef186abff99",
+      "author": "Umash",
+      "notes": "Chinese index of fansub releases: anime, Japanese drama and variety shows, and music. Titles are in Chinese or Japanese with the English name after a slash, so search the English name. Up to 90 results through the RSS feed, with size and date, three pages one after another because the site refuses quick repeats; load more for the next. Categories: anime, tv (drama and variety), music. No seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_aither",
+      "name": "Aither",
+      "site": "https://aither.cc/",
+      "file": "plugins/umash_aither.py",
+      "version": "1.0",
+      "sha256": "a70bdd61615901ebadce7b36eaf4fe436b924668cc591928845b6545c0859c5e",
+      "author": "Umash",
+      "notes": "HD movie and TV tracker, through its UNIT3D API with an API key from My Settings, kept in your Keychain. Best-seeded first with freeleech marked, movies and TV categories. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_animebytes",
+      "name": "AnimeBytes",
+      "site": "https://animebytes.tv/",
+      "file": "plugins/umash_animebytes.py",
+      "version": "1.0",
+      "sha256": "f61a9d30c4cc4e13666c8939ed5308ebec0d0cc23593cc8be7df28b35497dbb1",
+      "author": "Umash",
+      "notes": "Anime, manga, game and music tracker, through its scrape API with your username and passkey (profile, Access settings), kept in your Keychain. Names read Title Year Edition [properties]; anime, TV, movies, books, games and music categories, and hentai is left out when adult content is off. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_apachetorrent",
+      "name": "Apache Torrents",
+      "site": "https://apachetorrents.com/",
+      "file": "plugins/umash_apachetorrent.py",
+      "version": "1.0",
+      "sha256": "8e4f91b076897ca173b3aa9910f97bd725fc13f1a837c18225c025200129f994",
+      "author": "Umash",
+      "notes": "Brazilian movies and series, one result per quality. Follows the site's move and new layout. No seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_avistaz",
+      "name": "AvistaZ",
+      "site": "https://avistaz.to/",
+      "file": "plugins/umash_avistaz.py",
+      "version": "1.0",
+      "sha256": "a5b967cdf17faae28bb29c88fe5a6ce1f69b159b4ff9108fd072fffa2b68f669",
+      "author": "Umash",
+      "notes": "Asian movie and TV tracker (AsiaTorrents). Your username, password and PID, kept in your Keychain, sign Umash in for each search through the same API Jackett and Prowlarr use. Up to 100 results, movies, TV and music categories; the site asks for about 6 seconds between requests, so searches take a little longer. The RSS key in download links is never shown. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_bakabt",
+      "name": "BakaBT",
+      "site": "https://bakabt.me/",
+      "file": "plugins/umash_bakabt.py",
+      "version": "1.0",
+      "sha256": "194526a672c3510973605dc9373d5851f989397375509a7fbabcd114b5fa1c24",
+      "author": "Umash",
+      "notes": "Anime tracker. Sign in from Umash on the site's own page (it has a CAPTCHA), then click I'm Signed In. Best-seeded first, 100 a page, with hentai left out when adult content is off. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_beyondhd",
+      "name": "Beyond-HD",
+      "site": "https://beyond-hd.me/",
+      "file": "plugins/umash_beyondhd.py",
+      "version": "1.0",
+      "sha256": "98158de9a03f0e4964fdefabc415eaa07bdd5dfc2a37d3582d3ca432fc953fe7",
+      "author": "Umash",
+      "notes": "HD movies and TV through the site's API. Needs your API key and RSS key from your Beyond-HD profile, under My Security, kept in your Keychain. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_bitporn",
+      "name": "BitPorn",
+      "site": "https://bitporn.eu/",
+      "file": "plugins/umash_bitporn.py",
+      "version": "1.0",
+      "sha256": "2ddbfa6a885e34218f3c511e9b5ea8f833a238778e85590024da6dcbe3d8d66d",
+      "author": "Umash",
+      "notes": "Adult. Through the site's API with your API key, kept in your Keychain. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "adult",
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_bitsearch",
+      "name": "Bitsearch",
+      "site": "https://bitsearch.eu/",
+      "file": "plugins/umash_bitsearch.py",
+      "version": "1.2",
+      "sha256": "f003b70ffd92439db5c891b51a69714b77595599f7b46570ae40fff0cb6a0f1b",
+      "author": "Umash",
+      "notes": "Everything on Bitsearch (formerly Solid Torrents) through its official API: one quick request per search, with categories. Free for 200 searches a day; a free Bitsearch account's API key, added under Settings, allows 1,000.",
+      "list": "official",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_blutopia",
+      "name": "Blutopia",
+      "site": "https://blutopia.cc/",
+      "file": "plugins/umash_blutopia.py",
+      "version": "1.0",
+      "sha256": "b3af73c83e8f41afa0074762c03d828141529891faca3031b4dbb8e9da05f3cc",
+      "author": "Umash",
+      "notes": "HD movie and TV tracker, through its UNIT3D API with an API key from My Settings, kept in your Keychain. Best-seeded first with freeleech marked; movies and TV categories. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_broadcasthenet",
+      "name": "BroadcasTheNet",
+      "site": "https://broadcasthe.net/",
+      "file": "plugins/umash_broadcasthenet.py",
+      "version": "1.0",
+      "sha256": "652df02e2cafaf3d74f00c2721694ca5033fd0fbe013b93533738bf64c45dd9d",
+      "author": "Umash",
+      "notes": "TV tracker, through its JSON-RPC API with your API key (profile, Security), kept in your Keychain. Up to 300 results a search, newest first (the API allows 150 calls an hour). Download links hold your key, so Umash asks for the real link only when you download. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_brokenstones",
+      "name": "BrokenStones",
+      "site": "https://brokenstones.is/",
+      "file": "plugins/umash_brokenstones.py",
+      "version": "1.2",
+      "sha256": "998ab9a1b4bb80b427d0c80bfabaf83d2acc214bf0d1b8485e78b7ab76b8a0bf",
+      "author": "Umash",
+      "notes": "Private tracker for macOS and iOS apps and games. Sign in from Umash on the site's own page, with no keys to copy. Newest first, with sizes, upload times, seeds and leechers, and Load More. Your login stays in your Keychain.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_bt4g",
+      "name": "BT4G",
+      "site": "https://bt4gprx.com/",
+      "file": "plugins/umash_bt4g.py",
+      "version": "1.1",
+      "sha256": "08fbf5212d7e92d1c5100d1d15263b4a71baabc3d37c76c34250465024629880",
+      "author": "Umash",
+      "notes": "DHT search through BT4G's open RSS feed, which works where its web pages show a Cloudflare check. One quick request, with magnets; up to 15 results and no seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_c411",
+      "name": "C411",
+      "site": "https://c411.org/",
+      "file": "plugins/umash_c411.py",
+      "version": "1.0",
+      "sha256": "824167ec1cceec926c33b4af079bd9ce6e1d1c89a0228a344eb698374b76dad7",
+      "author": "Umash",
+      "notes": "French tracker, through its Torznab API with your API key from the site's Integrations page, kept in your Keychain. Result links carry no key. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_cinemaz",
+      "name": "CinemaZ",
+      "site": "https://cinemaz.to/",
+      "file": "plugins/umash_cinemaz.py",
+      "version": "1.0",
+      "sha256": "478a7c8f7dc52e70c98c087af4340210a5d5849257bda214d3e22c276f8ab9f4",
+      "author": "Umash",
+      "notes": "Foreign (non-Asian) movie and TV tracker, also called EuTorrents. Your username, password and PID, kept in your Keychain, sign Umash in for each search through the same API Jackett and Prowlarr use. Up to 100 results, movies and TV categories; the site asks for about 6 seconds between requests. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_distrowatch",
+      "name": "DistroWatch",
+      "site": "https://distrowatch.com/",
+      "file": "plugins/umash_distrowatch.py",
+      "version": "1.0",
+      "sha256": "dd161aa133d9cd02625809b8a7bb94e540df0b44b7935c4f007ae37438bee92b",
+      "author": "Umash",
+      "notes": "The Linux and BSD release images DistroWatch seeds itself, about 200 current ones. One request, newest first, named Project: file with the date added and a link to the project's DistroWatch page. The site lists no size or seed counts.",
+      "list": "official",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_dmhy",
+      "name": "DMHY",
+      "site": "https://share.dmhy.org/",
+      "file": "plugins/umash_dmhy.py",
+      "version": "1.0",
+      "sha256": "b00af45cbf46fecea1c676df7541c6048cd0adc8b9e62243141804157a298064",
+      "author": "Umash",
+      "notes": "動漫花園, a large Chinese-language index of anime, manga, Japanese drama, music and games from fansub groups in Taiwan, Hong Kong and China. Search by the name the release uses. Up to 160 results with size, seeds and date, and load more for the next pages. Categories: anime, books (manga), music, games, tv (Japanese drama and tokusatsu).",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_elitetorrent",
+      "name": "Elitetorrent",
+      "site": "https://www.elitetorrent.com/",
+      "file": "plugins/umash_elitetorrent.py",
+      "version": "2.0",
+      "sha256": "53a62573a8a7173b50bc7a0055a47a37bb9d969b979edee67de2913757f8c23e",
+      "author": "Umash",
+      "notes": "Spanish movies and series. Patched copy of the community plugin: its link decoding no longer matched the site.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_exoticaz",
+      "name": "ExoticaZ",
+      "site": "https://exoticaz.to/",
+      "file": "plugins/umash_exoticaz.py",
+      "version": "1.0",
+      "sha256": "4f94ea6867152fe559941ffc2b4d06a3ac7868d56be21b34a7fe2fbcb75e519f",
+      "author": "Umash",
+      "notes": "Adult video tracker, also called YourExotic, and the adult sister of AvistaZ. Your username, password and PID, kept in your Keychain. Up to 100 results; nothing is searched when adult content is off. The site asks for about 6 seconds between requests. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "adult",
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_eztv",
+      "name": "EZTV",
+      "site": "https://eztvx.to/",
+      "file": "plugins/umash_eztv.py",
+      "version": "1.2",
+      "sha256": "d82dd8925383791820ecf355d17aa6fa9c1471372e3afb2d153c694a0e2cecd7",
+      "author": "Umash",
+      "notes": "TV shows through EZTV's own API, which works where the site's Cloudflare check blocks plugins, with no login. Search by show name (\"Severance S02E03\" works); words that aren't a show, such as a year or a release group like MeGusta, are looked for in the newest 500 uploads. The API is asked at eztvx.to and then the site's other addresses, and a Cloudflare check or rate limit is reported as such. Search by show name, optionally with S02E03, S02 or 2x03. Show names are looked up on IMDb.",
+      "list": "official",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_filelist",
+      "name": "FileList",
+      "site": "https://filelist.io/",
+      "file": "plugins/umash_filelist.py",
+      "version": "1.0",
+      "sha256": "a4304ec7fa095a8175dcb47197b4e45b268f9078bb8287a2bc04700dea66f9cd",
+      "author": "Umash",
+      "notes": "Private tracker, through its API. Needs your username and the passkey from your FileList profile, not your site password. Both are kept in your Keychain, and a wrong passkey shows as an error.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_fitgirl",
+      "name": "FitGirl Repacks",
+      "site": "https://fitgirl-repacks.site/",
+      "file": "plugins/umash_fitgirl.py",
+      "version": "1.0",
+      "sha256": "3e04ee4f516412f93f4972913c780587b03bacf0e5ef72400ffa8dfa7bcebc32",
+      "author": "Umash",
+      "notes": "Compressed PC game repacks with their updates and DLC. Searches the titles of the site's posts through its WordPress API, newest first: 80 results with the repack size (\"from 49.5 GB\" when the site has optional parts) and the date posted, and load more. No daily update lists or blog posts. Games only, so All and Games are the same search. Repacks are executables: only trust this site.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_fosstorrents",
+      "name": "FOSS Torrents",
+      "site": "https://fosstorrents.com/",
+      "file": "plugins/umash_fosstorrents.py",
+      "version": "1.0",
+      "sha256": "e368f4c449864544ef75269662ebc29b54bbdb098059f2533a36be4fdabe8a3e",
+      "author": "Umash",
+      "notes": "Official torrents of free and open-source software: about 1,100 Linux and BSD images, apps like Blender, Audacity and LibreOffice, and open-source games. One request, newest first, with the date added and a link to each project's page. The site lists no size or seed counts.",
+      "list": "official",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_gazellegames",
+      "name": "GazelleGames",
+      "site": "https://gazellegames.net/",
+      "file": "plugins/umash_gazellegames.py",
+      "version": "1.0",
+      "sha256": "d8888f2a05fa97d7903d9cf48c2edb4a4c7708b4f64b5af692c0731291bb6b0c",
+      "author": "Umash",
+      "notes": "Games tracker, through the site's API with an API key from your settings (with the User and Torrents permissions), kept in your Keychain. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_hdbits",
+      "name": "HDBits",
+      "site": "https://hdbits.org/",
+      "file": "plugins/umash_hdbits.py",
+      "version": "1.0",
+      "sha256": "4a89ee364dc88381ee074f02a53a78f81c0b9e6e9793a0b4b547053ca41612f7",
+      "author": "Umash",
+      "notes": "HD movie, TV, documentary, sport and music tracker, through its API with your username and passkey (profile page), kept in your Keychain. Up to 300 results, newest first, named by the scene file name, with freeleech marked and adult material left out when adult content is off. The passkey never appears in a link. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_internetarchive",
+      "name": "Internet Archive",
+      "site": "https://archive.org/",
+      "file": "plugins/umash_internetarchive.py",
+      "version": "1.0",
+      "sha256": "e975422f922cca8d79c099d7a1ab763be85bbc2ae8e4e9c305ad68cb32c4325a",
+      "author": "Umash",
+      "notes": "Films, TV, music, books, software, games and pictures that are free to share: public-domain works, open-source software, live concerts. Every item has an official torrent served by archive.org itself, so downloads work without peers. 100 results a search, most-downloaded first, with size and date; load more for the next 100. In every category. No seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_iptorrents",
+      "name": "IPTorrents",
+      "site": "https://iptorrents.com/",
+      "file": "plugins/umash_iptorrents.py",
+      "version": "2.1",
+      "sha256": "b813123e9c46fb1ccb788bbefea8001f8d500e28b9ef35a38fb5570e1381c1da",
+      "author": "Umash",
+      "notes": "Private tracker. Sign in from Umash on the site's own page, CAPTCHA and all, with no keys to copy. Everything the website shows: old results, seeds and leechers. Your login stays in your Keychain, and Umash says when it needs renewing.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_kickass",
+      "name": "Kickass Torrents",
+      "site": "https://kickasstorrents.to/",
+      "file": "plugins/umash_kickass.py",
+      "version": "1.2",
+      "sha256": "e8c1cb80e121d0604dd2e02c2f1f52a30a31ff53e2d0f029215ce78c13523f06",
+      "author": "Umash",
+      "notes": "Everything on kickasstorrents.to, best-seeded first, up to 60 results, with anime, games, movies, music, software and TV categories. Published dates are approximate, as the site only gives an age such as 3 years. An unofficial mirror that some DNS filters block as a threat. The magnet is fetched when you download.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_kinozal",
+      "name": "Kinozal",
+      "site": "https://kinozal.me/",
+      "file": "plugins/umash_kinozal.py",
+      "version": "1.0",
+      "sha256": "5052dcd547116d3ec23770be99922c6cc5c257ec864ce814b1833aed5d55e6a7",
+      "author": "Umash",
+      "notes": "Russian film and TV tracker, now at kinozal.me. Sign in from Umash on the site's own page, Cloudflare check included. Best-seeded first; one category per search, as the site allows. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_latteam",
+      "name": "Lat-Team",
+      "site": "https://lat-team.com/",
+      "file": "plugins/umash_latteam.py",
+      "version": "1.0",
+      "sha256": "e7e018338c1929148c395bf0bde5ca2d7786d18fb12888e23c3c514aa62c908a",
+      "author": "Umash",
+      "notes": "Latin American tracker, through the site's API with your API key, kept in your Keychain. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_limetorrents",
+      "name": "LimeTorrents",
+      "site": "https://www.limetorrents.fun/",
+      "file": "plugins/umash_limetorrents.py",
+      "version": "1.0",
+      "sha256": "373c210afd7c46d7532940c6643fbc1ca508ee59aa8b56c0daf99a29aa87e822",
+      "author": "Umash",
+      "notes": "General torrent index, best-seeded first: 80 results with size, seeds and magnets, then load more. The site ignores category choices, so a category search reads up to four pages and keeps the rows filed under it (anime, software, games, movies, music, tv). Dates are approximate, as the site shows only an age. Skips the site's sponsored rows.",
+      "list": "official",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_linuxtracker",
+      "name": "Linux Tracker",
+      "site": "https://linuxtracker.org/",
+      "file": "plugins/umash_linuxtracker.py",
+      "version": "1.0",
+      "sha256": "b437d98369a36edf002a2ccf6777c5d26cfca7e9af61c8dd826c6633e0b264de",
+      "author": "Umash",
+      "notes": "Linux and BSD images. Reads the site's rebuilt pages, with seeds and dates.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_lostfilm",
+      "name": "LostFilm",
+      "site": "https://www.lostfilm.tv/",
+      "file": "plugins/umash_lostfilm.py",
+      "version": "1.0",
+      "sha256": "1ebb435765e2ed90ac7f68d7e801518e6de64f1c5ea0e9ec938b35b8a95ef958",
+      "author": "Umash",
+      "notes": "Russian TV dubs. Search by series name, optionally with S02 or S02E03; each episode and season comes in 1080p, 720p and SD. Sign in from Umash on the site's own page (it has a CAPTCHA), then click I'm Signed In. No sizes or seeds until you download, as on the site. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_mikan",
+      "name": "Mikan Project",
+      "site": "https://mikanani.me/",
+      "file": "plugins/umash_mikan.py",
+      "version": "1.0",
+      "sha256": "20debce7003d355f94149af4f944e30bf7cdeb99117f7d52d5b1c94377717328",
+      "author": "Umash",
+      "notes": "Chinese anime index of fansub releases. Every match (often 1,000) with magnet, size and date in one request. The site has no seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_milkie",
+      "name": "Milkie",
+      "site": "https://milkie.cc/",
+      "file": "plugins/umash_milkie.py",
+      "version": "1.0",
+      "sha256": "97bdbf3cc8a1ed8594cf20aa634ca99667c5318bcbe86037874f3afd9b548ab3",
+      "author": "Umash",
+      "notes": "Private tracker, through its API with your API key, kept in your Keychain. One page of 100 results. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_myanonamouse",
+      "name": "MyAnonamouse",
+      "site": "https://www.myanonamouse.net/",
+      "file": "plugins/umash_myanonamouse.py",
+      "version": "1.0",
+      "sha256": "ac5263fd566df4635d6b35d4413a145f2d6c458d726c80ba06cd7bab5f2bb71d",
+      "author": "Umash",
+      "notes": "Audiobook and ebook tracker (Books = audiobooks and ebooks; Music = musicology, meaning music and sheet music, and radio), through the site's JSON search with a session ID you create under Preferences, Security (Create session; ASN-locked if your IP changes), kept in your Keychain. Best-seeded first, up to 300 results named Title by Author [Language / Format]. A session is tied to the IP or provider it was made for, so create a new one if you move networks. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_mypornclub",
+      "name": "My Porn Club",
+      "site": "https://myporn.club/",
+      "file": "plugins/umash_mypornclub.py",
+      "version": "2.0",
+      "sha256": "f18e1cd20d2e3c0a76c0799189f006d52d9e3b670c1ae9eafbfbe766c73cec12",
+      "author": "Umash",
+      "notes": "Adult. Patched copy of the community plugin: three pages, without the mirror lookup that hung every search.",
+      "list": "public",
+      "flags": [
+        "adult"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_ncore",
+      "name": "nCore",
+      "site": "https://ncore.pro/",
+      "file": "plugins/umash_ncore.py",
+      "version": "1.0",
+      "sha256": "2cc2bf5955c690bd8886c7b5e146d6759b7f349607bd18efeb19962faceecbbd",
+      "author": "Umash",
+      "notes": "Hungarian tracker. Sign in from Umash on the site's own page, two-factor code included, then click I'm Signed In. Best-seeded first, with XXX left out when adult content is off. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_nnmclub",
+      "name": "NNM-Club",
+      "site": "https://nnmclub.to/",
+      "file": "plugins/umash_nnmclub.py",
+      "version": "1.0",
+      "sha256": "6bbf81ab981bb1aacd87000c1b53d9bddbacd6125495022a9363cf87d020c388",
+      "author": "Umash",
+      "notes": "Russian forum tracker, now at nnmclub.to. No account needed: up to 50 best-seeded results a search, with magnets. Many names are in Russian, and searching in Russian works too.",
+      "list": "private",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_nordicbytes",
+      "name": "NordicBytes",
+      "site": "https://nordicbytes.org/",
+      "file": "plugins/umash_nordicbytes.py",
+      "version": "1.0",
+      "sha256": "77f66ababc7035fb493139c78e6bdb5c832bd22b1ab2d867303d48e37e394977",
+      "author": "Umash",
+      "notes": "Nordic tracker, formerly DanishBytes (danishbytes.club now sends you here). Through the site's API with your API key, kept in your Keychain. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_nyaa",
+      "name": "Nyaa",
+      "site": "https://nyaa.si/",
+      "file": "plugins/umash_nyaa.py",
+      "version": "1.0",
+      "sha256": "f29fdd38593b1643d33958e5330828fb68f306878ab1765ddd412fe0b4ddc24c",
+      "author": "Umash",
+      "notes": "The main home of English-subtitled anime: episodes, batches and raws, plus manga, light novels, Japanese music and live-action. Best-seeded first with seeds, size and date: 150 results in about 7 seconds (two pages, paused 5 seconds apart as the site asks), then load more. Categories: anime, books, music, pictures, software, games, and tv and movies (the site's Live Action).",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_onlinefix",
+      "name": "Online-Fix",
+      "site": "https://online-fix.me/",
+      "file": "plugins/umash_onlinefix.py",
+      "version": "1.0",
+      "sha256": "4dab64cc4dbfd527c45949abef7ca1ad1f31860b1c9c4534216e7e502f3ead2a",
+      "author": "Umash",
+      "notes": "Multiplayer fixes for PC games, searched on the site itself. Needs your free online-fix.me account under Settings, as the site only shows download links to members.",
+      "list": "public",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_orpheus",
+      "name": "Orpheus",
+      "site": "https://orpheus.network/",
+      "file": "plugins/umash_orpheus.py",
+      "version": "1.0",
+      "sha256": "47a6da74be68afb9480d8107ba1e777e12fec850cd0620e6f14b3c923392d369",
+      "author": "Umash",
+      "notes": "Music tracker (also e-books, audiobooks, comics and applications), through the site's API with an API token from your profile settings (Torrents permission), kept in your Keychain. Names like Artist - Album (Year) [Format]. Built from Jackett's and Prowlarr's indexers and Umash's Redacted plugin, which uses the same API; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_passthepopcorn",
+      "name": "PassThePopcorn",
+      "site": "https://passthepopcorn.me/",
+      "file": "plugins/umash_passthepopcorn.py",
+      "version": "1.0",
+      "sha256": "5f0d0979aa4f1ff7403543354c297bc43255ee62ed1cf5202e3f3d76a072e226",
+      "author": "Umash",
+      "notes": "Movie tracker, through its API with an ApiUser and ApiKey from your profile's Security page, kept in your Keychain. One result per torrent, best-seeded first, up to 150, with Golden Popcorn and freeleech marked. Movies only. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_phoenixproject",
+      "name": "Phoenix Project",
+      "site": "https://phoenixproject.app/",
+      "file": "plugins/umash_phoenixproject.py",
+      "version": "1.3",
+      "sha256": "d9b3d91883ad82fa9f6e03d296344c6eed6b3ff62b43bc05dfd767a3cc9cd283",
+      "author": "Umash",
+      "notes": "Private tracker for macOS and iOS apps and games. Sign in from Umash on the site's own page (with your 2FA code if you use one), then click I'm Signed In. Newest first, with sizes, upload times, seeds and leechers, and Load More. Your login stays in your Keychain.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_piratebay",
+      "name": "The Pirate Bay",
+      "site": "https://thepiratebay.org/",
+      "file": "plugins/umash_piratebay.py",
+      "version": "1.0",
+      "sha256": "5ff415acca748c0b795e37f09e6f1495ca1bea445c2e305b1afd05f880e489e3",
+      "author": "Umash",
+      "notes": "Through the site's open API, with the date added and the site's category after each name. Real Movies, TV, music, books, games, software and pictures categories (Jackett's Pirate Bay codes), each code asked at once: up to 600 results in about a second. Replaces qBittorrent's own, whose Movies also brought in TV shows.",
+      "list": "official",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_pirateface",
+      "name": "Pirate Face",
+      "site": "https://pirateface.co/",
+      "file": "plugins/umash_pirateface.py",
+      "version": "1.0",
+      "sha256": "29a08a5ff1675366def12d9d76b35229dc5b6c8f84c321096f76f490c8d79535",
+      "author": "Umash",
+      "notes": "Community torrents of open AI models, such as LLMs, mirrored from Hugging Face, searched under All. Uses the plain-text search the site documents for terminal use (pirateface.co/s/<words>), one request a search and no account. Every result is a magnet with the site's trackers and Hugging Face web seeds, best-seeded first. The site's list has no leechers or further pages, and sizes are its rounded figures. Published is the date the site \"Witnessed\" the model, read from each model's page a few at a time and saved on this Mac for two weeks: a first search can take about 10 seconds and show some results without a date, and the next search fills the rest in. Models whose license makes the downloader accept terms first have no magnet in that list, so they don't show here. The site isn't affiliated with Hugging Face: check each file's SHA-256 against the hash on the model page. Tested against the live site.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_pirateiro",
+      "name": "Pirateiro",
+      "site": "https://pirateiro.io/",
+      "file": "plugins/umash_pirateiro.py",
+      "version": "1.0",
+      "sha256": "10024b5b618c3bc9b07d85d8006881c4643491a0f870ec581e2a606719ec9d0c",
+      "author": "Umash",
+      "notes": "General index. Reads seed counts the site writes short (8.4k), which the older plugin skipped, losing the best-seeded results. 3 pages at once. The site lists no size or date, and its torrent pages are slow, so a download can take up to a minute.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_pornolab",
+      "name": "Pornolab",
+      "site": "https://pornolab.net/",
+      "file": "plugins/umash_pornolab.py",
+      "version": "1.0",
+      "sha256": "722c655f7a1fff1c05306cac706a973e200d1938913c0ae4c66512fdbcae5a1b",
+      "author": "Umash",
+      "notes": "Adult forum tracker. Sign in from Umash on the site's own page (it can ask for a CAPTCHA), then click I'm Signed In. Best-seeded first. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "adult",
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_privatehd",
+      "name": "PrivateHD",
+      "site": "https://privatehd.to/",
+      "file": "plugins/umash_privatehd.py",
+      "version": "1.0",
+      "sha256": "96310c14dccddb734e837e42e75c53057e6571444b621a9395a9d7b51eb71bcf",
+      "author": "Umash",
+      "notes": "HD movie and TV tracker, a sister of AvistaZ. Your username, password and PID, kept in your Keychain, sign Umash in for each search through the same API Jackett and Prowlarr use. Up to 100 results, movies and TV categories; the site asks for about 6 seconds between requests. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_redacted",
+      "name": "Redacted",
+      "site": "https://redacted.sh/",
+      "file": "plugins/umash_redacted.py",
+      "version": "1.0",
+      "sha256": "c1ab6760f7a3d8c47ed416adff2c0fddfe01e3cb105cfd76c2521d24d4e94341",
+      "author": "Umash",
+      "notes": "Music tracker, now at redacted.sh. Through the site's API with an API key from your settings (Torrents permission), kept in your Keychain. Names like Artist - Album (Year) [Format]. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_redetorrent",
+      "name": "Rede Torrents",
+      "site": "https://redestorrents.com/",
+      "file": "plugins/umash_redetorrent.py",
+      "version": "1.0",
+      "sha256": "1d12b1d386c9839862972321184f142cd58c6cead854fc6a02492038f56c1e05",
+      "author": "Umash",
+      "notes": "Brazilian movies and series, one result per quality. Follows the site's move and new layout. No seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_rutracker",
+      "name": "RuTracker",
+      "site": "https://rutracker.org/",
+      "file": "plugins/umash_rutracker.py",
+      "version": "1.0",
+      "sha256": "35c56c88513c66bb209c9a354243a4915fe48d40b3230a66aad371f3fb8add4b",
+      "author": "Umash",
+      "notes": "Tracker that needs an account. Sign in from Umash on the site's own page, Cloudflare check and CAPTCHA included, with no password stored. Your login stays in your Keychain, and Umash says when it needs renewing. Many names are in Russian, and searching in Russian works too.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_scenetime",
+      "name": "SceneTime",
+      "site": "https://www.scenetime.com/",
+      "file": "plugins/umash_scenetime.py",
+      "version": "1.0",
+      "sha256": "e8c916a8c126c63ffcfd66a5d64756bb0f8bfca1d766ec1e70e77c55d9fc4a60",
+      "author": "Umash",
+      "notes": "Movie, TV and general tracker, through its Torznab-style API with the API key from its RSS page, kept in your Keychain. One page of up to 100 results with freeleech marked, in anime, books, games, movies, music, software and TV categories. Result links carry no key. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_sktorrent",
+      "name": "SkTorrent",
+      "site": "https://sktorrent.eu/",
+      "file": "plugins/umash_sktorrent.py",
+      "version": "2.0",
+      "sha256": "78fa6a70b42246605bc2de783776b51d2e9b0826f0b854b83223bc44e9f5b166",
+      "author": "Umash",
+      "notes": "Czech and Slovak site, mostly films and series with CZ/SK dubbing. The site now shows its torrent lists only to signed-in members (free to join): sign in from Umash on the site's own page, then click I'm Signed In, with nothing to copy. Up to 120 results with dates and magnets; the site itself is slow, so the pages are fetched at once. Not yet tested with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_snowfl",
+      "name": "Snowfl",
+      "site": "https://snowfl.com/",
+      "file": "plugins/umash_snowfl.py",
+      "version": "1.0",
+      "sha256": "1a11c96df21676a414c35e5eef99244a5218634b0a36f9dc8a7a2e9165456bf8",
+      "author": "Umash",
+      "notes": "Aggregates other torrent sites, sorted by seeds. Reads Snowfl's changing key from its page script, which both older plugins no longer could.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_speedapp",
+      "name": "SpeedApp",
+      "site": "https://speedapp.io/",
+      "file": "plugins/umash_speedapp.py",
+      "version": "1.0",
+      "sha256": "b5489d34397cb6c3b88e68fb46a6155a8d3ab08f83690c7a73f4778c632a1204",
+      "author": "Umash",
+      "notes": "Romanian tracker, through its API with an API token from your profile, kept in your Keychain. Newest first, as Prowlarr asks. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_subsplease",
+      "name": "SubsPlease",
+      "site": "https://subsplease.org/",
+      "file": "plugins/umash_subsplease.py",
+      "version": "1.0",
+      "sha256": "7cb7425db3b5337259499f7bee16109a7584b6e459e96ac4e636e49f68b4e142",
+      "author": "Umash",
+      "notes": "This season's anime with English subtitles, released within an hour of airing. Each episode is a result in 480p, 720p and 1080p, up to 270 through the site's own API, with magnets, size and date; load more for older episodes. Anime only, so All and Anime are the same search. No seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_sukebei",
+      "name": "Sukebei (Nyaa)",
+      "site": "https://sukebei.nyaa.si/",
+      "file": "plugins/umash_sukebei.py",
+      "version": "1.0",
+      "sha256": "64e10d9cfb09e13a263a7b0d9e3fdf21ab8c78da55d8d63395d4d52680d30a8f",
+      "author": "Umash",
+      "notes": "Adult. Nyaa's adult site, best-seeded first: up to 300 results with the date added, in a few seconds.",
+      "list": "public",
+      "flags": [
+        "adult"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_tapochek",
+      "name": "Tapochek",
+      "site": "https://tapochek.net/",
+      "file": "plugins/umash_tapochek.py",
+      "version": "1.0",
+      "sha256": "3988d1c916d101165284f680ffdfbfa608d04ac6de61d011f16e5271c16759c7",
+      "author": "Umash",
+      "notes": "Russian forum tracker, strong on games. Sign in from Umash on the site's own page, then click I'm Signed In. Best-seeded first. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_therarbg",
+      "name": "The RarBg",
+      "site": "https://therarbg.com/",
+      "file": "plugins/umash_therarbg.py",
+      "version": "3.0",
+      "sha256": "9b039f3578515eaae02d4cb8d883e8ac77e3c761d5ddede921f665ae9e0296f4",
+      "author": "Umash",
+      "notes": "Up to 150 results, best-seeded first, with the day each was added, in a few seconds. Movies, TV, music, games, anime and software categories. The magnet is fetched when you download.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_tokyotosho",
+      "name": "Tokyo Toshokan",
+      "site": "https://www.tokyotosho.info/",
+      "file": "plugins/umash_tokyotosho.py",
+      "version": "1.2",
+      "sha256": "ed892f694cbeff89dd31f53d16303319976b0d7a3b1c2a754b5887af3e77346f",
+      "author": "Umash",
+      "notes": "Anime and Japanese media through the site's open RSS feed, which works where its search page shows a Cloudflare check. Includes adult categories under all, unless adult content is off in Settings. No seed counts.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_toloka",
+      "name": "Toloka",
+      "site": "https://toloka.to/",
+      "file": "plugins/umash_toloka.py",
+      "version": "1.0",
+      "sha256": "2889a9564c8d729f65f7e98d3bee023a1627c6eda541f90baacc8c685751a09f",
+      "author": "Umash",
+      "notes": "Ukrainian tracker (Гуртом — торрент-толока). Sign in from Umash on the site's own page, then click I'm Signed In. Newest first, as Prowlarr asks. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_torrentclaw",
+      "name": "TorrentClaw",
+      "site": "https://torrentclaw.com/",
+      "file": "plugins/umash_torrentclaw.py",
+      "version": "1.0",
+      "sha256": "e131a366e582485bb006e106056900a0a5df07fac8e0083b511d81301c197d28",
+      "author": "Umash",
+      "notes": "Gathers torrents from YTS, EZTV, Knaben and others, with a quality score in each name. Needs a free API key from torrentclaw.com; a key saved for the older plugin carries over. Says plainly when the key is missing or refused.",
+      "list": "public",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_torrentday",
+      "name": "TorrentDay",
+      "site": "https://www.torrentday.com/",
+      "file": "plugins/umash_torrentday.py",
+      "version": "1.0",
+      "sha256": "ae207fc05c9c39273af038f076075f6beb6438ce652a49cb268f24f5caf33230",
+      "author": "Umash",
+      "notes": "Private tracker. Sign in from Umash on the site's own page, CAPTCHA and all, with no keys to copy. Exact sizes, upload times, seeds and leechers, in one list per search as the site sends it. Your login stays in your Keychain. Not yet tested with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_torrentdownload",
+      "name": "TorrentDownload",
+      "site": "https://www.torrentdownload.info/",
+      "file": "plugins/umash_torrentdownload.py",
+      "version": "1.0",
+      "sha256": "a8b708a271e1c229c2f33401ee53f4e4d0c7eee9d52f37a3d96b603e704ac4a9",
+      "author": "Umash",
+      "notes": "General index, best-seeded first: up to 150 results (250 checked for a category), with magnets. The site often stalls, so each page gets 15 s and up to 3 tries, all pages at once. Exact dates for the first ~50 results only.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_torrentdownloads",
+      "name": "Torrent Downloads Pro",
+      "site": "https://www.torrentdownloads.pro/",
+      "file": "plugins/umash_torrentdownloads.py",
+      "version": "2.0",
+      "sha256": "cbf45203215621107a7fc71de414f495077ddadb3f40d9b3f9bf3c842580822d",
+      "author": "Umash",
+      "notes": "General index. Up to 200 results with the date added and magnets in about 10 s: the site's feed gives 50 at once, and each further row's page is read 8 at a time.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_torrentleech",
+      "name": "TorrentLeech",
+      "site": "https://www.torrentleech.org/",
+      "file": "plugins/umash_torrentleech.py",
+      "version": "1.0",
+      "sha256": "f538c918f6b50898e508b4d10a98369549ef3c3808c3e76f8a4627daa3bc34b8",
+      "author": "Umash",
+      "notes": "Private tracker. Sign in from Umash on the site's own page. Best-seeded first, with freeleech marked. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_torrentscsv",
+      "name": "Torrents-CSV",
+      "site": "https://torrents-csv.com/",
+      "file": "plugins/umash_torrentscsv.py",
+      "version": "1.0",
+      "sha256": "87d99971797fcb90289f707e1aa245e2877e1c7d4cf6f7736b33fa217dd72cc4",
+      "author": "Umash",
+      "notes": "An open database of torrents collected from the DHT, through its JSON API: up to six pages of 25 (often 40 or more results) with size, seed and leech counts and the date first seen, in a couple of seconds. The database has no categories, so it searches under All only.",
+      "list": "official",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_tr4ker",
+      "name": "TR4KER",
+      "site": "https://tr4ker.net/",
+      "file": "plugins/umash_tr4ker.py",
+      "version": "1.0",
+      "sha256": "0b48aee5e8035706db5a3c25bcdee7accb22a48d5aa0be95e13f053111366c0b",
+      "author": "Umash",
+      "notes": "French tracker, through its Torznab API with your API key, kept in your Keychain. Result links carry no key. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_tsukihime",
+      "name": "TsukiHime",
+      "site": "https://tsukihime.org/",
+      "file": "plugins/umash_tsukihime.py",
+      "version": "1.0",
+      "sha256": "9c96e09b4d47fb6febac1d013118947bb0b8c4461c8dc3a107bfdf620c492c29",
+      "author": "Umash",
+      "notes": "Anime index. Up to 100 releases with size and date; seed counts fetched 8 at a time. Releases the site has no tracker data for show no seeds.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_unionfansub",
+      "name": "UnionFansub",
+      "site": "https://torrent.unionfansub.com/",
+      "file": "plugins/umash_unionfansub.py",
+      "version": "1.0",
+      "sha256": "08f738a08a3e71901a062c4f4d6129542fc5b187e796c28221b6719efdf9d527",
+      "author": "Umash",
+      "notes": "Spanish anime fansubs. Sign in from Umash on the forum's own page, which signs you in to the tracker. Adult categories are left out when adult content is off. Built from Jackett's indexer and tested against the site signed out; not yet tried with a real account.",
+      "list": "private",
+      "flags": [
+        "needsLogin"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_xxxclub",
+      "name": "XXXClub",
+      "site": "https://xxxclub.to/",
+      "file": "plugins/umash_xxxclub.py",
+      "version": "1.0",
+      "sha256": "c2a376849005d514a4929b0f3f5031140f29f79e0e0363fa9c881b6a082c82f6",
+      "author": "Umash",
+      "notes": "Adult. The 30 best-seeded results of a search. Reads the site's current pages.",
+      "list": "public",
+      "flags": [
+        "adult"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_yggreborn",
+      "name": "YggReborn",
+      "site": "https://www.yggreborn.org/",
+      "file": "plugins/umash_yggreborn.py",
+      "version": "1.0",
+      "sha256": "4b15a520b2c808f4c2b11084661d936da2c612d0d3cb5da9bbd9ae8c6432af64",
+      "author": "Umash",
+      "notes": "French tracker that follows YggTorrent, through its API with the PassKey from the site's API guide page, kept in your Keychain. Result links carry no key. Built from Jackett's and Prowlarr's indexers; a made-up key gets a clear refusal, but no real account has tried it yet.",
+      "list": "private",
+      "flags": [
+        "needsKey"
+      ],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_yts",
+      "name": "YTS",
+      "site": "https://yts.mx/",
+      "file": "plugins/umash_yts.py",
+      "version": "1.0",
+      "sha256": "1ee6d1c4675b6cec2655b5e6e1228136e99014922d9f199651acea9a16407be1",
+      "author": "Umash",
+      "notes": "Small-size movie releases, one result per quality (720p, 1080p, 2160p), up to 3 pages of 50 movies with magnets, in under a second. Tested against the live API. Uses YTS's public API at its new address, movies-api.accel.li, with the older yts.mx and yts.bz as fallbacks. No account needed. Movies only.",
+      "list": "public",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    },
+    {
+      "id": "umash_zamunda",
+      "name": "Zamunda.LIFE",
+      "site": "https://zamunda.life/",
+      "file": "plugins/umash_zamunda.py",
+      "version": "1.0",
+      "sha256": "36fc443606b75b3bec4bd16653bf9dcb368af22a1eb5bda2a5ca728f3550b2f5",
+      "author": "Umash",
+      "notes": "Bulgarian magnet search that replaced Zamunda.RIP. No account needed: 20 results a page, with Load More, and magnets. No seed counts or dates.",
+      "list": "private",
+      "flags": [],
+      "platforms": [
+        "all"
+      ]
+    }
+  ]
+}
