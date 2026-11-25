@@ -5,6 +5,8 @@
 
 Inputs: plugins/*.py and catalog/metadata.json (hand-edited: name, site, notes, list, flags,
 platforms for each plugin id; a "hidden" note keeps a plugin in the repo but out of the list).
+metadata.json's "retired" maps the id of each plugin taken out of the repo to its name and a
+short reason; the app shows the reason to anyone who still has the plugin installed.
 For each plugin it takes the version from the file's
 `# VERSION:` line and the sha256 of the file's bytes. Writes nothing and exits with an
 error if a plugin has no metadata, metadata has no plugin, a version line is missing, or
@@ -27,7 +29,9 @@ ID = re.compile(r"[a-z0-9_]{1,64}")
 
 
 def main():
-    metadata = json.loads((ROOT / "catalog" / "metadata.json").read_text("utf-8"))["plugins"]
+    document = json.loads((ROOT / "catalog" / "metadata.json").read_text("utf-8"))
+    metadata = document["plugins"]
+    retired_meta = document.get("retired", {})
     files = {p.stem: p for p in sorted((ROOT / "plugins").glob("*.py"))}
     problems, plugins = [], []
     for plugin_id in sorted(set(files) | set(metadata)):
@@ -60,6 +64,18 @@ def main():
             "author": meta.get("author", "Umash"), "notes": meta.get("notes", ""), "list": meta.get("list", ""),
             "flags": sorted(meta.get("flags", [])), "platforms": meta.get("platforms", []),
         })
+    retired = []
+    for plugin_id in sorted(retired_meta):
+        item = retired_meta[plugin_id]
+        if plugin_id in files or plugin_id in metadata:
+            problems.append(f"{plugin_id}: retired, but its file or metadata entry is still there")
+        if not ID.fullmatch(plugin_id):
+            problems.append(f"{plugin_id}: retired id is not a valid id")
+        if not item.get("name") or not item.get("reason"):
+            problems.append(f"{plugin_id}: a retired plugin needs a name and a reason")
+        if len(item.get("reason", "")) > 300:
+            problems.append(f"{plugin_id}: the reason is over 300 characters")
+        retired.append({"id": plugin_id, "name": item.get("name", ""), "reason": item.get("reason", "")})
     if problems:
         sys.exit("Not written:\n  " + "\n  ".join(problems))
 
@@ -68,13 +84,17 @@ def main():
     if target.is_file():
         try:
             old = json.loads(target.read_text("utf-8"))
-            if old.get("format") == FORMAT and old.get("plugins") == plugins:
+            if old.get("format") == FORMAT and old.get("plugins") == plugins and old.get("retired", []) == retired:
                 updated = old.get("updated", updated)
         except ValueError:
             pass
-    target.write_text(json.dumps({"format": FORMAT, "updated": updated, "plugins": plugins}, indent=2, ensure_ascii=False) + "\n", "utf-8")
+    listing = {"format": FORMAT, "updated": updated, "plugins": plugins}
+    if retired:
+        listing["retired"] = retired
+    target.write_text(json.dumps(listing, indent=2, ensure_ascii=False) + "\n", "utf-8")
     counts = {name: sum(p["list"] == name for p in plugins) for name in LISTS}
-    print(f"{len(plugins)} plugins listed ({counts['official']} official, {counts['public']} public, {counts['private']} private), dated {updated}")
+    print(f"{len(plugins)} plugins listed ({counts['official']} official, {counts['public']} public, {counts['private']} private),"
+          f" {len(retired)} retired, dated {updated}")
 
 
 if __name__ == "__main__":

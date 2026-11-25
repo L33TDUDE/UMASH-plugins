@@ -944,5 +944,11 @@
       ],
       "notes": "Bulgarian magnet search that replaced Zamunda.RIP. No account needed: 20 results a page, with Load More, and magnets. No seed counts or dates."
     }
+  },
+  "retired": {
+    "umash_snowfl": {
+      "name": "Snowfl",
+      "reason": "Unreliable results, and not a good source."
+    }
   }
 }

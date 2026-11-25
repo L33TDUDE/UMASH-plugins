@@ -21,6 +21,8 @@ python3 -I tools/build-catalog.py
 
 and commit the result. The generator stops if a plugin has no metadata (or the reverse), has no `# VERSION:` line, or has a bad field. Don't edit `plugins.json` by hand: the hashes would stop matching and Umash would refuse the files. A `"hidden"` note in `metadata.json` keeps a plugin in this repository but out of the list.
 
+To take a plugin out for good, delete its file and its `plugins` entry, and add it under `"retired"` in `metadata.json` with its name and a short reason (300 characters at most). The reason goes into the list, and Umash shows it to anyone who still has the plugin installed, with a choice to keep or remove it.
+
 ## The list (format 1)
 
 ```
