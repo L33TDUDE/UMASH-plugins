@@ -1,6 +1,6 @@
 {
   "format": 1,
-  "updated": "2026-11-19",
+  "updated": "2026-11-25",
   "plugins": [
     {
       "id": "umash_1337x",
@@ -911,21 +911,6 @@
       "flags": [
         "needsLogin"
       ],
-      "platforms": [
-        "all"
-      ]
-    },
-    {
-      "id": "umash_snowfl",
-      "name": "Snowfl",
-      "site": "https://snowfl.com/",
-      "file": "plugins/umash_snowfl.py",
-      "version": "1.0",
-      "sha256": "1a11c96df21676a414c35e5eef99244a5218634b0a36f9dc8a7a2e9165456bf8",
-      "author": "Umash",
-      "notes": "Aggregates other torrent sites, sorted by seeds. Reads Snowfl's changing key from its page script, which both older plugins no longer could.",
-      "list": "public",
-      "flags": [],
       "platforms": [
         "all"
       ]

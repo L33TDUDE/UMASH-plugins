@@ -702,17 +702,6 @@
       ],
       "notes": "Czech and Slovak site, mostly films and series with CZ/SK dubbing. The site now shows its torrent lists only to signed-in members (free to join): sign in from Umash on the site's own page, then click I'm Signed In, with nothing to copy. Up to 120 results with dates and magnets; the site itself is slow, so the pages are fetched at once. Not yet tested with a real account."
     },
-    "umash_snowfl": {
-      "name": "Snowfl",
-      "site": "https://snowfl.com/",
-      "author": "Umash",
-      "list": "public",
-      "flags": [],
-      "platforms": [
-        "all"
-      ],
-      "notes": "Aggregates other torrent sites, sorted by seeds. Reads Snowfl's changing key from its page script, which both older plugins no longer could."
-    },
     "umash_speedapp": {
       "name": "SpeedApp",
       "site": "https://speedapp.io/",
